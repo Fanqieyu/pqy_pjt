@@ -1,0 +1,103 @@
+/*提示行样式*/
+#products>div:nth-child(2) div>label{
+  cursor:pointer;
+  font-size:15px;
+}
+/*筛选*/
+#filter>span{
+  font-size:15px;
+}
+/*降序 颜色 尺码*/
+#collapseex{
+  margin-top:3px;
+  width:80px;
+  font-size:14px;
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+  text-align:center;
+  padding: 3px 6px;
+}
+#collapseco{
+  margin-top:3px;
+  margin:0 auto;
+  width:300px;
+  font-size:14px;
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+  padding:3px 5px;
+}
+#collapsesi{
+  margin-top:3px;
+  margin:0 auto;
+  width:300px;
+  font-size:14px;
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+  padding:3px 6px;
+}
+/*折叠导航条里的a样式*/
+#collapseex a,#collapseco a,#collapsesi a{
+  text-decoration:none;
+  padding: 2px 6px;
+  color: #666666;
+}
+ a.current{  /*选中的a*/
+  background: #EEEEEE;
+  color:#333;
+  padding:3px 6px;
+}
+#collapseex a:hover,#collapseco a:hover,#collapsesi a:hover{
+  color:#333;
+}
+#collapsesi a{  /*单独定义尺码的a*/
+  padding:2px 12px;
+  text-align: center;
+}
+
+#plist div>div.card>div.card-body>p{
+  margin-top:-15px;
+}
+#plist div>div.card>div.card-body>p>a{
+  text-decoration:none;
+  font-size:14px;
+  color:#333;
+}
+#plist div>div.card>div.card-body input{
+  text-align: center;
+  width:25px;
+}
+#plist div>div.card>div.card-body a.btn{
+  font-size:14px;
+}
+
+
+
+
+/*媒体查询*/
+@media screen and (min-width:992px){
+  /*设图片宽度*/
+  #products>div{
+    width:1170px;
+  }
+
+}
+/*pad*/
+@media screen and (min-width:768px) and (max-width:991px){
+  #products>div:first-child>div>a>img{
+    width:100%;
+  }
+
+}
+/*phone*/
+@media screen and (max-width:767px){
+  #products>div:first-child>div>a>img{
+    width:100%;
+  }
+  #products>div:nth-child(2)>div:not(:first-child){
+    display:none;
+  }
+  #products>div:last-child>nav>ul{
+    margin-left:-40px;
+    min-width:256px;
+  }
+}

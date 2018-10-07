@@ -1,0 +1,67 @@
+/*点击下载字体大小*/
+#footer>div:nth-child(2)>a{
+  text-decoration:none;
+  color:#727171;
+  font-size:18px;
+}
+/*新浪微信图片大小*/
+#footer>div:nth-child(5)>a{
+	text-decoration:none;
+}
+#footer>div:nth-child(5)>a>img{
+  width:40px;
+  height:40px;
+}
+/*尾巴纯文字*/
+#footer>div:nth-child(3)>a,#footer>div:nth-child(6)>a{
+  color: #727171;
+  text-decoration:none;
+}
+/*备案号字体大小*/
+#footer>div:nth-child(7){
+  font-size:12px;
+  color: #727171;
+}
+/*110图片大小*/
+#footer>div:last-child>a>img{
+  width:33px;
+  height:40px;
+}
+
+@media screen and (min-width:992px){
+  /*设图片宽度*/
+  #footer>div:nth-child(2)>a>img{
+    width:350px;
+  }
+  /*分割线*/
+  #footer>.hr{
+    height:1px;
+    background:#ccc;
+    width:1170px;
+  }
+}
+/*pad*/
+@media screen and (min-width:768px) and (max-width:991px){
+  #footer>div:nth-child(2)>a>img{
+    width:280px;
+  }
+  #footer>.hr{
+    height:1px;
+    background:#ccc;
+    width:100%;
+  }
+}
+/*phone*/
+@media screen and (max-width:767px){
+  #footer>div:nth-child(2)>a>img{
+    width:250px;
+  }
+  #footer{
+    min-width:300px;
+  }
+  #footer>.hr{
+    height:1px;
+    background:#ccc;
+    width:100%;
+  }
+}

@@ -1,0 +1,59 @@
+/*左边注册文字样式 如：姓名*/
+#registerForm span{
+  font-size:14px;
+  max-width: 100%;
+  font-weight: 700;
+  color:#333;
+}
+/*checkbox后文字样式 同意/订阅*/
+#registerForm>div:nth-child(13),#registerForm>div:nth-child(14){
+  font-size:13px;
+}
+/*表单输入框选择框样式*/
+#registerForm>div.form-group>input.form-control,#registerForm>div.form-group div.fieldSet>select.form-control{
+  margin-top:5px;
+  border-radius:0;
+  box-shadow:none;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  background-color: #fff;
+}
+
+
+@media screen and (min-width:992px){
+  /*设选择框尺寸*/
+  #registerForm>div.form-group div.fieldSet>select.form-control{
+    width:180px;
+  }
+}
+/*pad*/
+@media screen and (min-width:768px) and (max-width:991px){
+  /*右侧大图尺寸缩小*/
+  #main>div>div:last-child>div>a>img{
+    width:300px;
+  }
+  /*设选择框尺寸*/
+  #registerForm>div.form-group div.fieldSet>select.form-control{
+    width:180px;
+  }
+
+}
+/*phone*/
+@media screen and (max-width:767px){
+  /*左侧宽度*/
+  #main>div>div:first-child{
+    width:100%;
+  }
+  /*右侧大图消失*/
+  #main>div>div:last-child>div>a>img{
+    display:none;
+  }
+  /*设选择框尺寸*/
+  #registerForm>div.form-group div.fieldSet>select.form-control{
+    width:130px;
+  }
+}

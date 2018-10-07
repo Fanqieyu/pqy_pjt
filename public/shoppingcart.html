@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>购物车</title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/shoppingcart.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="icon" type="image/x-icon"  href="favicon.ico">
+</head>
+<body>
+  <header id="header" class="container"></header>
+
+  <div id="cart" class="container">
+  <!--三个流程-->
+  <div class="step">
+    <ul class="float-right list-unstyled">
+      <li class="current">查看购物车</li>
+      <li>订单结算</li>
+      <li>订单完成</li>
+    </ul>
+  </div>
+  <!--标题栏-->
+  <div class="header row">
+    <div class="col-md-1 col-lg-1">选择</div>
+    <div class="col-md-2 col-lg-1">图片</div>
+    <div class="col-md-7 col-lg-4">商品</div>
+    <div class="col-md-2">价格</div>
+    <div class="none col-lg-1">数量</div>
+    <div class="none col-lg-2">小计</div>
+    <div class="none col-lg-1">操作</div>
+  </div>
+  <!--购物车内容-->
+  <div class="content row">
+    <div class="col-md-1 col-lg-1">
+      <div class="checked">
+        <input type="checkbox" name="chooseId" onclick="clickone()">
+      </div>
+    </div>
+    <div class="col-md-2 col-lg-1">
+      <a href="products.html?kw=鞋" target="_blank">
+        <img class="thumbnail" src="img/shoppingcart/sp1.jpg" alt="方头异形高跟及踝靴">
+      </a>
+    </div>
+    <div class="name col-md-7 col-lg-4">
+      <a href="products.html?kw=鞋" target="_blank">
+        <span title="方头异形高跟及踝靴">方头异形高跟及踝靴</span>
+        <span>CK1-90920052</span>
+      </a>
+      <span class="spec">[白色, 37]</span>
+    </div>
+    <div class="price col-md-2">
+      ￥519.00
+    </div>
+    <div class="none quantity col-lg-1">
+        <button class="btn p-0 px-1 bg-white font-weight-bold pb-2" type="button">-</button>
+      <span>1</span>
+        <button class="btn p-0 bg-white font-weight-bold pb-2" type="button">+</button>
+    </div>
+    <div class="none col-lg-2">
+      <span class="subtotal">￥519.00</span>
+    </div>
+    <div class="none col-lg-1">
+      <a href="#">删除</a>
+    </div>
+  </div>
+  <div class="content row">
+    <div class="col-md-1 col-lg-1">
+      <div class="checked">
+        <input type="checkbox" name="chooseId" onclick="clickone()">
+      </div>
+    </div>
+    <div class="col-md-2 col-lg-1">
+      <a href="products.html?kw=鞋" target="_blank">
+        <img class="thumbnail" src="img/shoppingcart/sp2.jpg" alt="黑色靴子">
+      </a>
+    </div>
+    <div class="name col-md-7 col-lg-4">
+      <a href="products.html?kw=鞋" target="_blank">
+        <span>拼接材质方头及踝靴</span>
+        <span>CK1-90900075</span>
+      </a>
+      <span class="spec">[黑色, 37]</span>
+    </div>
+    <div class="price col-md-2">
+      ￥499.00
+    </div>
+    <div class="none quantity col-lg-1">
+      <button class="btn p-0 px-1 bg-white font-weight-bold pb-2" type="button">-</button>
+      <span>1</span>
+      <button class="btn p-0 bg-white font-weight-bold pb-2" type="button">+</button>
+    </div>
+    <div class="none col-lg-2">
+      <span class="subtotal">￥499.00</span>
+    </div>
+    <div class="none col-lg-1">
+      <a href="#">删除</a>
+    </div>
+  </div>
+  <div class="content row">
+    <div class="col-md-1 col-lg-1">
+      <div class="checked">
+        <input type="checkbox" name="chooseId" onclick="clickone()">
+      </div>
+    </div>
+    <div class="col-md-2 col-lg-1">
+      <a href="products.html?kw=鞋" target="_blank">
+        <img class="thumbnail" src="img/shoppingcart/sp3.jpg" alt="平底鞋">
+      </a>
+    </div>
+    <div class="name col-md-7 col-lg-4">
+      <a href="products.html?kw=鞋" target="_blank">
+        <span title="">金属环扣双袢带平底鞋</span>
+        <span>CK1-70900092</span>
+      </a>
+      <span class="spec">[玫瑰金, 37]</span>
+    </div>
+    <div class="price col-md-2">
+      ￥369.00
+    </div>
+    <div class="none quantity col-lg-1">
+      <button class="btn p-0 px-1 bg-white font-weight-bold pb-2" type="button">-</button>
+      <span>1</span>
+      <button class="btn p-0 bg-white font-weight-bold pb-2" type="button">+</button>
+    </div>
+    <div class="none col-lg-2">
+      <span class="subtotal">￥369.00</span>
+    </div>
+    <div class="none col-lg-1">
+      <a href="#">删除</a>
+    </div>
+  </div>
+  <!--全选按钮-->
+  <div class="checkbox row ml-4">
+    <input id="check" class="mt-2" type="checkbox" onclick="clickALL()">
+    <label for="check" class="mx-2 pt-1">
+      全选
+    </label>
+      <a href="#" class="delete pt-1">删除</a>
+  </div>
+  <!--登录和3件商品-->
+  <div class="text-right total">
+    登录后确认是否享有优惠
+  </div>
+  <div class="text-right py-2">
+    <span>3</span>件商品
+  </div>
+  <!--商品金额-->
+  <div class="text-right">
+    <span>
+      商品金额 <strong>￥1387.00元</strong>
+    </span>
+  </div>
+  <!--提交订单-->
+  <div class="clearfix">
+    <div class="float-right">
+      <button class="btn btn-dark border-0">提交订单</button>
+    </div>
+  </div>
+
+ </div>
+
+  <footer id="footer" class="container"></footer>
+
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/shoppingcart.js"></script>
+
+
+</body>
+</html>

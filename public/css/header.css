@@ -1,0 +1,128 @@
+/*自定义字体*/
+.font-size{
+  font-size:12px;
+}
+/*下拉搜索框样式*/
+div#collapseExample{
+  margin-left:42px;
+  text-align: center;
+}
+/*悬停下拉登录框样式
+#db1{
+  width:350px;
+  font-size:14px;
+  margin-left:-88px;
+  margin-top:10px;
+}*/
+/*悬停下拉登录框内a样式
+#db1>div:nth-child(4)>a,#db1>div:nth-child(6)>a{
+  text-decoration:none;
+}*/
+/*鼠标悬停登录按钮
+header>div>div:last-child>div>a:hover{
+  padding-bottom:5px;
+  border-bottom:2px solid black;
+  border-radius: 2px;
+}*/
+/*固定住第一行*/
+#header>div:first-child{
+  height:40px;
+  padding-top:30px;
+}
+
+/*折叠导航nav样式*/
+#header>nav:nth-child(2){
+  margin-top:45px;
+}
+nav>div:last-child>ul>li>a{
+  font-size:18px;
+  line-height:20px;
+}
+nav>div:last-child>ul>li>a:hover{
+  border-bottom:1px solid black;
+}
+.navbar-light .navbar-nav .nav-link {
+  color:#333;  /*a的颜色这样才有效果*/
+}
+/*折叠导航栏nav里的样式*/
+.db2{
+  width:400px;
+  margin-left:10px;
+  margin-top:6px;
+}
+.db2>ul>li{
+  padding-right:10px;
+  border-right: 1px solid #cccccc;
+}
+.db2>ul>li>a{
+  font-size:15px;
+  color:#727171;
+  text-decoration: none;
+}
+.db2>ul>li>a:hover{
+  color:#333;
+}
+/*包邮说明*/
+#header>div:last-child{
+  margin-bottom: 5px;
+  background: #F4F4F4;
+  text-align: center;
+  font-size:13px;
+}
+
+/**** 媒体查询 ****/
+@media screen and (min-width:992px){
+  /*设标题图片宽度*/
+  header>div>div:nth-child(2)>img{
+    width:342px;
+  }
+  header>div>div:first-child>a,header>div>div:last-child>span>a,header>div>div:last-child>a{
+    font-size:12px;
+    text-decoration:none;
+    color:#333;
+  }
+  /*包邮说明*/
+  #header>div:last-child{
+    min-width:1170px;
+  }
+
+}
+/*pad*/
+@media screen and (min-width:768px) and (max-width:991px){
+
+  header>div>div:nth-child(2)>a>img{
+    width:342px;
+  }
+  header>div>div:first-child>a,header>div>div:last-child>span>a,header>div>div:last-child>a{
+    font-size:12px;
+    text-decoration:none;
+    color:#333;
+  }
+  /*标题行左边和右边缩小消失*/
+  header>div>div:first-child>a:last-child,header>div>div:first-child>b:nth-child(4),header>div>div:last-child>a:nth-child(5),header>div>div:last-child>b:nth-child(6){
+    display:none;
+  }
+  /*包邮说明*/
+  #header>div:last-child{
+    min-width:690px;
+  }
+}
+/*phone*/
+@media screen and (max-width:767px){
+
+  header>div>div:nth-child(2)>a>img{
+    width:100%;
+  }
+  /*标题行左边和右边缩小消失*/
+  header>div:first-child>div:first-child,header>div:first-child>div:last-child{
+    display: none;
+  }
+  /*导航条距离标题行*/
+  #header>nav:nth-child(2){
+    margin-top:5px;
+  }
+  /*包邮说明*/
+  #header>div:last-child{
+    min-width:273px;
+  }
+}

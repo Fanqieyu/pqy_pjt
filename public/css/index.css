@@ -1,0 +1,207 @@
+/*轮播图样式 指示器*/
+#myCarousel>div>.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+  margin-bottom:6px;
+}
+#myCarousel>div>.carousel-indicators li{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  float:left;
+  margin-left:10px;
+  cursor:pointer;
+  opacity: 0.6;
+  background-color: #000000;
+}
+#myCarousel>div>.carousel-indicators li.active{
+  background-color: white;
+}
+
+/**** 媒体查询 ****/
+@media screen and (min-width:992px){
+  /*定制电梯按钮的样式*/
+  #index>.btn-group-vertical{
+    top:100px;
+    left:10px;
+  }
+  #index>.btn-group-vertical>.btn:hover {
+    background-color: #6c757c;
+    border-color:#6c757c;
+  }
+
+  /*楼层最后 3张图*/
+  #index>div:last-child{
+    width:1180px;
+  }
+  /*四楼最后三张图 隐藏替换图*/
+  #index div.four div.col-lg-4 a img.hidden-pc{
+    display:none;
+  }
+  /*轮播图固定尺寸*/
+  #index>div:first-child{
+    width:1170px;
+  }
+
+  /*翻转卡片样式*/
+  .card {
+    width:350px;
+    height: 470px;
+    min-height: 400px;
+    perspective: 1000px;
+    margin: 1rem;
+    position: relative;
+    border:none;
+  }
+
+  .front, .back {
+    display: flex;
+    border-radius: 6px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden; /**/
+    backface-visibility: hidden; /**/
+    transform-style: preserve-3d;  /**/
+    transition: ease-in-out 600ms;  /**/
+  }
+
+  .card:hover .front {
+    transform: rotateY(180deg);
+  }
+  .card:nth-child(even):hover .front {
+    transform: rotateY(-180deg);
+  }
+
+  .back {
+    background:#fff; /*颜色*/
+    transform: rotateY(-180deg);
+    padding: 0 2em; /*文字*/
+  }
+  .card:hover .back {
+    transform: rotateY(0deg);
+  }
+  .card:nth-child(even) .back {
+    transform: rotateY(180deg);
+  }
+  .card:nth-child(even):hover .back {
+    transform: rotateY(0deg);
+  }
+
+  .button {
+    transform: translateZ(40px);
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    font-weight: bold;
+    color: #fff;
+    padding: .5em 1em;
+    margin-top:3rem;
+    border-radius: 100px;
+    font: inherit;
+    background: linear-gradient(135deg, #1a9be6, #1a57e6);
+    border: none;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 300ms ease;
+  }
+  .button:before {
+    transition: 300ms ease;
+    position: absolute;
+    display: block;
+    content: '';
+    transform: translateZ(-40px);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    height: calc(100% - 20px);
+    width: calc(100% - 20px);
+    border-radius: 100px;
+    left: 10px;
+    top: 16px;
+    box-shadow: 0 0 10px 10px rgba(26, 87, 230, 0.25);
+    background-color: rgba(26, 87, 230, 0.25);
+  }
+  .button:hover {
+    transform: translateZ(55px);
+  }
+  .button:hover:before {
+    transform: translateZ(-55px);
+  }
+  .button:active {
+    transform: translateZ(20px);
+  }
+  .button:active:before {
+    transform: translateZ(-20px);
+    top: 12px;
+  }
+
+}
+/*pad*/
+@media screen and (min-width:768px) and (max-width:991px){
+  /*一二三楼图片尺寸*/
+  #index>h3>div.one>div>a>img,#index>h3>div.two>div>a>img,#index>h3>div.three>div>a>img{
+    width:100%;}
+  /*四楼最后三张图 隐藏原图*/
+  #index div div.col-lg-4 a img.hidden-mobile,.back{
+    display:none !important;
+  }
+  /*四楼最后三张图 出现替换图*/
+  #index div.four div.col-lg-4 a img.hidden-pc{
+    display:block;
+    margin-bottom:7px;
+    width:100%;
+  }
+  /*隐藏卡片边框*/
+  .card {
+    border:none;
+  }
+}
+/*phone*/
+@media screen and (max-width:767px){
+  /*一二三楼图片尺寸*/
+  #index>h3>div.one>div>a>img,#index>h3>div.two>div>a>img,#index>h3>div.three>div>a>img{
+    width:100%;}
+  /*四楼最后三张图 隐藏原图*/
+  #index div div.col-lg-4 a img.hidden-mobile,.back{
+    display:none !important;
+  }
+  /*四楼最后三张图 出现替换图*/
+  #index div.four div.col-lg-4 a img.hidden-pc{
+    display:block;
+    margin-bottom:7px;
+    width:100%;
+  }
+  /*轮播图指示器样式*/
+  #myCarousel>div>.carousel-indicators li{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    float:left;
+    margin-left:2px;
+    cursor:pointer;
+    opacity: 0.6;
+    background-color: #000000;
+  }
+  .card {
+    border:none;
+  }
+  /*电梯消失*/
+  #index>.btn-group-vertical{
+    display:none;
+  }
+}
+

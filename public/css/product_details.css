@@ -1,0 +1,129 @@
+/*详细参数的样式*/
+#details>div:nth-child(2)>div.content{
+  font-size:12px;
+  color:#333;
+}
+/*尺码样式*/
+#details>div:nth-child(3)>span>a{
+  border:1px solid white;
+  text-decoration:none;
+  color: #333333;
+}
+/*已经选中的尺码34*/
+#details>div:nth-child(3)>span>a.checked{
+  border:1px solid #ccc;
+}
+/*鼠标悬停的尺码加框框*/
+#details>div:nth-child(3)>span>a:hover{
+  border-color:#ccc;
+}
+/*数量输入框*/
+#details>div:nth-child(4)>div input{
+  text-align: center;
+  width:50px;
+  height:22px;
+}
+/*立即购买*/
+#details>div:last-child>a{
+  display:inline-block;
+  width:300px;
+  height:34px;
+  background-color:#151515;
+  color:#fff;
+}
+/*加入购物车*/
+#details>div:last-child>a:last-child{
+  background-color:#6c757d;
+}
+/*浏览历史*/
+#main>div:nth-child(2){
+  width:1170px;
+  margin-left:7px;
+}
+/*浏览历史左右横线*/
+#main>div:nth-child(2)>div.col-xs-5{
+  width:45%;
+  height:1px;
+  background:#ccc;
+  margin:10px;
+}
+
+
+
+@media screen and (min-width:992px){
+  /*商品历史轮播图*/
+  #container{
+    width:1170px;
+    height:130px;
+    margin:35px auto;
+    overflow:hidden;
+    position:relative;
+  }
+  #container ul{
+    list-style:none;
+    width:10000px;
+    position:absolute;
+  }
+  #container ul li{
+    float:left;
+    margin-right:20px;
+  }
+  /*放大镜要用到的样式*/
+  #bigLg>div>ul img:hover{
+    border:1px solid #ccc;
+  }
+  #preview>img{width:400px}
+  #mask{
+    width:180px;
+    height:180px;
+    background-color:#ffa;
+    opacity:.5;
+    margin-top:25px;
+    margin-left:16px;
+  }
+  #super-mask{
+    width:400px;
+    height:400px;
+    top:0px;
+  }
+  #div-lg{
+    width:285px; height:285px;
+    left:420px;
+    top:50px;
+    z-index:1000;
+    border:1px solid rgba(0,0,0,0.125);
+    overflow:hidden;
+  }
+
+
+}
+/*pad*/
+@media screen and (min-width:768px) and (max-width:991px){
+  /*商品小图，浏览历史，历史轮播图*/
+  #main>div>div.col-lg-2,#main>div:nth-child(2),#container{
+    display: none;
+  }
+  /*中间：图片*/
+  #preview img{
+    width:100%;
+  }
+}
+/*phone*/
+@media screen and (max-width:767px){
+  /*商品小图，浏览历史，历史轮播图*/
+  #main>div>div.col-lg-2,#main>div:nth-child(2),#container{
+    display: none;
+  }
+  /*中间：图片*/
+  #preview img{
+    width:100%;
+  }
+  /*立即购买*/
+  #details>div:last-child>a:first-child{
+    width:100%;
+  }
+  /*加入购物车，详细参数*/
+  #details>div:last-child>a:last-child,#parameter>div.content{
+    display:none;
+  }
+}

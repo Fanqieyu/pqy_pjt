@@ -1,0 +1,280 @@
+
+    <!--第一行左右链接+标题图片-->
+    <div class="pt-3 d-flex flex-row justify-content-around bg-white">
+        <!--左边链接-->
+        <div>
+            <a href="#" class="px-2">店铺搜索</a><b>|</b>
+            <a href="products.html?kw=鞋" class="px-2">2018早秋新品</a><b>|</b>
+            <a href="products.html?kw=鞋" class="px-2">2018夏季新品</a>
+        </div>
+        <!--中间logo-->
+        <div>
+            <a href="index.html">
+                <img src="img/header/logo.png" alt="logo">
+            </a>
+        </div>
+        <!--右边链接-->
+        <div>
+            <span id="signout">
+                <!--登录样式-->
+                <a href="#" class="px-2" id="btnLogin">登录</a><b>|</b>
+                <a href="register.html" class="px-2">注册</a><b>|</b>
+            </span>
+            <span id="signin">
+                <a class="p-1" href="#">Welcome <span id="uname"></span></a>
+                <a class="p-1" id="btnSignout" href="javascript:;">注销</a><b>|</b>
+            </span>
+            <!--购物车-->
+            <a href="shoppingcart.html" class="px-2">购物车0</a><b>|</b>
+            <!--搜索弹出框-->
+            <a href="#collapseExample" class="text-dark p-2" data-toggle="collapse">搜索</a>
+            <div class="collapse pl-4" id="collapseExample">
+                <input type="text" class="font-size" placeholder="请输入商品名或者款号" maxlength="30">
+            </div>
+        </div>
+    </div>
+    <!--第二行导航nav-->
+    <nav class=" navbar navbar-expand-lg bg-white navbar-light">
+        <a href="#" class="mb-1 p-1 navbar-brand">
+            <img src="img/header/laba.png">
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#c-navbar" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-dark" id="c-navbar">
+            <ul class="m-auto navbar-nav">
+                <li class="px-4 nav-item dropdown">
+                    <a href="products.html?kw=鞋" class="nav-link" data-trigger="dropdown">新品</a>
+                    <div class="db2 dropdown-menu p-3">
+                        <ul class="list-unstyled d-inline-block">
+                            <li>
+                                <a href="#" class="navigation_udplus" title="预售" onclick="udplus('新品')">预售</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="当月新品" onclick="udplus('新品')">当月新品</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="2018早秋新品" onclick="udplus('新品')">18早秋新品</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="2018夏季单品" onclick="udplus('新品')">18夏季单品</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="亲子系列" onclick="udplus('新品')">亲子系列</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="真皮系列" onclick="udplus('新品')">真皮系列</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="留白艺术" onclick="udplus('新品')">留白艺术</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="Scarlet" onclick="udplus('新品')">Scarlet</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="返璞归真" onclick="udplus('新品')">返璞归真</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="面料宣言" onclick="udplus('新品')">面料宣言</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="职装秘方" onclick="udplus('新品')">职装秘方</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="繁花锦簇" onclick="udplus('新品')">繁花锦簇</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="透明PVC" onclick="udplus('新品')">透明PVC</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="即将售罄" onclick="udplus('新品')">即将售罄</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="全部商品" onclick="udplus('新品')">全部商品</a>
+                            </li>
+                        </ul>
+                        <div class="dropdown-banner float-right">
+                            <img src="img/header/one.jpg" data-original="http://charleskeith.oss-cn-shanghai.aliyuncs.com/upload/image/201808/0ca40c84-78a5-4230-a5f6-32c16a23bc61.jpg" style="display: inline;">
+                        </div>
+                    </div>
+                </li>
+                <li class="px-4 nav-item">
+                    <a href="products.html?kw=鞋" class="nav-link">热品回归</a>
+                </li>
+                <li class="px-4 nav-item dropdown">
+                    <a href="products.html?kw=鞋" class="nav-link" data-trigger="dropdown">鞋履</a>
+                    <div class="db2 dropdown-menu p-3">
+                        <ul class="list-unstyled d-inline-block">
+                            <li>
+                                <a href="#" class="navigation_udplus" title="全部鞋履" onclick="udplus('鞋履')">全部鞋履</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="平底鞋" onclick="udplus('鞋履')">平底鞋</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="高跟鞋" onclick="udplus('鞋履')">高跟鞋</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="坡跟鞋" onclick="udplus('鞋履')">坡跟鞋</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="凉鞋" onclick="udplus('鞋履')">凉鞋</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="绑带鞋" onclick="udplus('鞋履')">绑带鞋</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="便鞋/拖鞋" onclick="udplus('鞋履')">便鞋/拖鞋</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="奶奶鞋" onclick="udplus('鞋履')">奶奶鞋</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="及踝靴" onclick="udplus('鞋履')">及踝靴</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="童鞋" onclick="udplus('鞋履')">童鞋</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="真皮系列" onclick="udplus('鞋履')">真皮系列</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="Ins 热选" onclick="udplus('鞋履')">Ins 热选</a>
+                            </li>
+                        </ul>
+                        <div class="dropdown-banner float-right">
+                            <img src="img/header/two.jpg" data-original="http://charleskeith.oss-cn-shanghai.aliyuncs.com/upload/image/201808/d906aecc-3e43-4a59-8a5b-ae2fe4ac6ede.jpg" style="display: inline;">
+                        </div>
+                    </div>
+                </li>
+                <li class="px-4 nav-item dropdown">
+                    <a href="#" class="nav-link" data-trigger="dropdown">包袋</a>
+                    <div class="db2 dropdown-menu p-3">
+                        <ul class="list-unstyled d-inline-block">
+                            <li>
+                                <a href="#" class="navigation_udplus" title="全部包袋" onclick="udplus('包袋')">全部包袋</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="卡包" onclick="udplus('包袋')">卡包</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="钱包" onclick="udplus('包袋')">钱包</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="零钱包" onclick="udplus('包袋')">零钱包</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="手拿包" onclick="udplus('包袋')">手拿包</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="手提包" onclick="udplus('包袋')">手提包</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="肩背包" onclick="udplus('包袋')">肩背包</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="斜背包" onclick="udplus('包袋')">斜背包</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="双肩包" onclick="udplus('包袋')">双肩包</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="童包" onclick="udplus('包袋')">童包</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="金属新绎" onclick="udplus('包袋')">金属新绎</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="镭射风潮" onclick="udplus('包袋')">镭射风潮</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="海边派对" onclick="udplus('包袋')">海边派对</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="流苏风情" onclick="udplus('包袋')">流苏风情</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="真皮系列" onclick="udplus('包袋')">真皮系列</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="Ins热选" onclick="udplus('包袋')">Ins热选</a>
+                            </li>
+
+                        </ul>
+                        <div class="dropdown-banner float-right">
+                            <img src="img/header/three.jpg" data-original="http://charleskeith.oss-cn-shanghai.aliyuncs.com/upload/image/201808/90da6f6a-f481-4a10-8526-646418ccdeeb.jpg" style="display: inline;">
+                        </div>
+                    </div>
+                </li>
+                <li class="px-4 nav-item dropdown">
+                    <a href="#" class="nav-link" data-trigger="dropdown">配饰</a>
+                    <div class="db2 dropdown-menu p-3">
+                        <ul class="list-unstyled d-inline-block">
+                            <li>
+                                <a href="#" class="navigation_udplus" title="全部配饰" onclick="udplus('配饰')">全部配饰</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="太阳眼镜" onclick="udplus('配饰')">太阳眼镜</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="电子配件" onclick="udplus('配饰')">电子配件</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="钥匙扣" onclick="udplus('配饰')">钥匙扣</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="包肩带" onclick="udplus('配饰')">包肩带</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="耳环" onclick="udplus('配饰')">耳环</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="手环" onclick="udplus('配饰')">手环</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="戒指" onclick="udplus('配饰')">戒指</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="项链" onclick="udplus('配饰')">项链</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="腰带" onclick="udplus('配饰')">腰带</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="其他" onclick="udplus('配饰')">其他</a>
+                            </li>
+                        </ul>
+                        <div class="dropdown-banner float-right">
+                            <img src="img/header/four.jpg" data-original="http://charleskeith.oss-cn-shanghai.aliyuncs.com/upload/image/201808/f231f9ce-d806-43ab-a071-9756ac9b688e.jpg" style="display: inline;">
+                        </div>
+                    </div>
+                </li>
+                <li class="px-4 nav-item dropdown">
+                    <a href="#" class="nav-link" data-trigger="dropdown">迪士尼</a>
+                    <div class="db2 dropdown-menu p-3">
+                        <ul class="list-unstyled d-inline-block p-4">
+                            <li>
+                                <a href="#" class="navigation_udplus" title="全部" onclick="udplus('迪士尼')">全部</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="女士" onclick="udplus('迪士尼')">女士</a>
+                            </li>
+                            <li>
+                                <a href="#" class="navigation_udplus" title="儿童" onclick="udplus('迪士尼')">儿童</a>
+                            </li>
+                        </ul>
+                        <div class="dropdown-banner float-right">
+                            <img src="img/header/five.jpg" data-original="http://charleskeith.oss-cn-shanghai.aliyuncs.com/upload/image/201803/25aa285f-ee63-4e4e-9c4d-3493b90aa360.jpg" style="display: inline;">
+                        </div>
+                    </div>
+                </li>
+                <li class="px-4 nav-item">
+                    <a href="products.html?kw=鞋" class="nav-link">焦点主题</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--第三行包邮提醒-->
+    <div>
+        <div class="py-1">购物可享免费配送服务（新疆、西藏地区除外）</div>
+    </div>

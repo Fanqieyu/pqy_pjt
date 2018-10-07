@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>登录页面</title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/register.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="icon" type="image/x-icon"  href="favicon.ico">
+</head>
+<body>
+<header id="header" class="container"></header>
+<!--登录页主体-->
+<div id="main" class="container">
+  <div class="row">
+    <!--左侧表单-->
+    <div class="col-md-6 offset-lg-1 col-lg-4">
+      <h5 class="title font-weight-bold">会员登录</h5>
+        <div class="form-group">
+          <span>姓名</span>
+          <input type="text" name="uname" class="uname form-control" maxlength="200">
+        </div>
+        <div class="form-group">
+          <span><b class="text-danger">*</b>密码</span>
+          <input type="password" id="password" name="upwd" class="upwd form-control" maxlength="20" autocomplete="off">
+        </div>
+        <div class="form-group">
+          <button class="login btn btn-dark btn-block">登录</button>
+        </div>
+        <div class="mb-3 text-center">
+          <a href="#" class="text-dark" style="text-decoration:none;">忘记密码</a>
+        </div>
+        <div class="form-group mb-3 text-dark text-center font-weight-bold">
+          <label>第三方登陆</label>
+          <div>
+            <a href="#" style="text-decoration:none;">
+              <img src="img/header/qq.jpg" alt="QQ">
+            </a>
+            <a href="#" style="text-decoration:none;">
+              <img src="img/header/weixin.jpg" alt="微信">
+            </a>
+          </div>
+        </div>
+        <div class="mb-3 text-center">
+          <a href="register.html" class="text-dark" style="text-decoration:none;">立即注册</a>
+        </div>
+    </div>
+    <!--右侧大图-->
+    <div class="col-md-6 offset-xl-1">
+      <div class="ad">
+        <a href="">
+          <img src="img/register/f3.jpg" class="img-responsive" alt="登录" title="登录">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<footer id="footer" class="container"></footer>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

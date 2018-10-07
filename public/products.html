@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>商品列表页</title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="icon" type="image/x-icon"  href="favicon.ico">
+</head>
+<body>
+  <header id="header" class="container"></header>
+  <!--商品列表页主体-->
+  <div id="products" class="container">
+      <!--头部大图-->
+      <div class="row">
+        <div class="col-md-12">
+          <a href="#">
+            <img src="img/product/big.jpg" alt="header大图">
+          </a>
+        </div>
+      </div>
+      <!--折叠导航栏商品选项-->
+      <div class="mt-2 pl-3 bar row">
+        <!--置顶降序-->
+        <div id="sort" class="sort col-xs-6 col-md-2">
+          <label class="select" href="#collapseex" data-toggle="collapse" aria-controls="collapseex">置顶降序 ♡</label>
+          <div class="collapse" id="collapseex">
+            <a href="#" class="current">置顶降序</a>
+            <a href="#" class="">价格升序</a>
+            <a href="#" class="">价格降序</a>
+            <a href="#" class="">销量降序</a>
+          </div>
+        </div>
+        <!--全部颜色和全部尺码-->
+        <div id="filter" class="filter col-xs-6 col-md-8 text-center">
+          <span class="font-weight-bold">筛选:  </span>
+          <label class="select" href="#collapseco" data-toggle="collapse" aria-controls="collapseco">全部颜色</label><b class="mx-2">|</b>
+          <label class="select" href="#collapsesi" data-toggle="collapse" aria-controls="collapsesi">全部尺码</label>
+          <!--折叠颜色-->
+          <div class="collapse" id="collapseco">
+              <a href="#" class="current">全部</a> <a href="#">卡其色</a> <a href="#">咖啡色</a> <a href="#">奶白色</a> <a href="#">橄榄色</a> <a href="#">橙色</a> <a href="#">浅灰色</a> <a href="#">浅金色</a> <a  href="#">深灰色</a> <a href="#">深蓝色</a> <a href="#">灰色</a> <a href="#">米黄色</a> <a href="#">粉红色</a> <a href="#">紫红色</a> <a href="#">综合色</a> <a href="#">白色</a> <a href="#">蓝绿色</a> <a href="#">酒红色</a> <a href="#">香槟色</a> <a href="#">淡紫色</a> <a href="#">紫色</a> <a href="#">米白色</a> <a href="#">奶油色</a> <a href="#">墨绿色</a> <a href="#">深棕色</a> <a href="#">裸色</a> <a href="#">橘色</a> <a href="#">红色</a> <a href="#">绿色</a> <a href="#">肉色</a> <a href="#">浅蓝色</a> <a href="#">驼色</a> <a href="#">黄色</a> <a href="#">黑色</a> <a href="#">金色</a> <a href="#">银色</a> <a href="#">玫红色</a>
+          </div>
+          <!--折叠尺码-->
+          <div class="collapse" id="collapsesi">
+              <a href="#" class="current">全部</a> <a href="#" class="pl-0">34</a>  <a href="#">35</a> <a href="#">36</a> <a href="#">37</a> <a href="#">38</a> <a href="#">39</a> <a href="#">40</a> <a href="#">41</a> <a href="#">12</a> <a href="#">13</a> <a href="#">14</a> <a href="#">15</a> <a href="#">16</a> <a href="#">17</a> <a href="#">18</a> <a href="#">19</a> <a href="#">20</a> <a href="#">21</a> <a href="#">22</a> <a href="#">23</a> <a href="#">24</a> <a href="#">25</a> <a href="#">26</a> <a href="#">27</a> <a href="#">28</a> <a href="#">29</a> <a href="#">30</a> <a href="#">31</a> <a href="#">32</a> <a href="#">33</a>
+
+          </div>
+        </div>
+        <!--欢迎选购-->
+        <div class="pageCtrl col-md-2">
+          <div class="page">
+            <label>
+              欢迎选购❤
+            </label>
+          </div>
+        </div>
+      </div>
+      <!--商品列表-->
+      <div id="plist" class="row bg-white ml-1 mr-1 pt-2 pl-2">
+       <!-- jquery填充代码 -->
+      </div>
+      <!--分页查询-->
+      <div class="mb-3 p-2 small">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination mb-0 justify-content-end">
+           <!-- jquery填充代码 -->
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  <footer id="footer" class="container"></footer>
+
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>注册页面</title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/register.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="icon" type="image/x-icon"  href="favicon.ico">
+</head>
+<body>
+  <header id="header" class="container"></header>
+<!--注册页主体-->
+  <div id="main" class="container">
+  <div class="row">
+    <!--左侧表单-->
+    <div class="col-md-6 offset-lg-1 col-lg-4">
+      <h5 class="title font-weight-bold">会员注册</h5>
+      <div id="registerForm">
+        <div class="form-group">
+          <span>姓名</span>
+          <input type="text" name="uname" class="uname form-control" maxlength="200">
+        </div>
+        <p id="username" class="text-danger font-weight-bold"></p>
+        <div class="form-group">
+          <span>生日</span>
+          <input type="date" name="birth" class="birth form-control">
+        </div>
+        <div class="form-group">
+          <span><b class="text-danger">*</b>手机</span>
+          <input type="text" name="phone" class="phone form-control" maxlength="200">
+        </div>
+        <p id="phone" class="text-danger font-weight-bold"></p>
+        <div class="form-group">
+          <span>E-mail</span>
+          <input type="text" name="email" class="email form-control" maxlength="200">
+        </div>
+        <p id="email" class="text-danger font-weight-bold"></p>
+        <div class="form-group">
+          <span>地区</span>
+          <div class="fieldSet">
+            <select name="city" class="city form-control">
+              <option value="">请选择...</option>
+              <option value="1">北京市</option>
+              <option value="2">上海市</option>
+              <option value="3">浙江省</option>
+              <option value="4">江西省</option>
+              <option value="5">湖北省</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <span><b class="text-danger">*</b>密码</span>
+          <input type="password" name="upwd" class="upwd form-control" maxlength="20" autocomplete="off">
+        </div>
+        <p id="upwd" class="text-danger font-weight-bold"></p>
+        <div class="form-group">
+          <span><b class="text-danger">*</b>确认密码</span>
+          <input type="password" name="rpwd" class="rpwd form-control" maxlength="20" autocomplete="off">
+        </div>
+        <p id="rpwd" class="text-danger font-weight-bold"></p>
+        <div class="form-group">
+          <input type="checkbox" name="agree" id="agree">&nbsp;&nbsp;我已阅读并同意&nbsp;&nbsp;<a target="_blank" href="/article/content/201408/63/1.html">注册协议</a>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="receive">&nbsp;&nbsp;订阅并接收到来自CHARLES &amp; KEITH的相关信息
+        </div>
+        <div class="form-group">
+          <button id="btn" type="submit" class="register btn btn-dark btn-block">注册</button>
+        </div>
+      </div>
+    </div>
+    <!--右侧大图-->
+    <div class="col-md-6 offset-xl-1">
+      <div class="ad">
+        <a href="">
+          <img src="img/register/ad.jpg" class="img-responsive" alt="注册" title="注册">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+  <footer id="footer" class="container"></footer>
+
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>

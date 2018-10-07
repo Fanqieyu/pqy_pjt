@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>CHARLES KEITH</title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="icon" type="image/x-icon"  href="favicon.ico">
+</head>
+<body>
+<header id="header" class="container"></header>
+<!--主页效果-->
+<div id="index" class="container">
+  <!--轮播图-->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <!--底层指示器-->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to ="0" class="active" ></li>
+        <li data-target="#myCarousel" data-slide-to ="1"></li>
+        <li data-target="#myCarousel" data-slide-to ="2"></li>
+        <li data-target="#myCarousel" data-slide-to ="3"></li>
+        <li data-target="#myCarousel" data-slide-to ="4"></li>
+      </ol>
+      <!--轮播图片-->
+      <div class="carousel-item active">
+        <a href="products.html?kw=鞋">
+          <img src="img/index/s1.jpg" alt="第一张" width="100%">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="products.html?kw=鞋">
+          <img src="img/index/s2.jpg" alt="第二张" width="100%">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="products.html?kw=鞋">
+          <img src="img/index/s3.jpg" alt="第三张" width="100%">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="products.html?kw=鞋">
+          <img src="img/index/s4.jpg" alt="第四张" width="100%">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="products.html?kw=鞋">
+          <img src="img/index/s5.jpg" alt="第五张" width="100%">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--中间三张图-->
+  <h3>
+    <!--一楼大图-->
+    <div class="row one mt-2">
+      <div class="col-md-12">
+        <a href="products.html?kw=鞋">
+          <img src="img/index/i1.jpg" alt="一楼大图">
+        </a>
+      </div>
+    </div>
+    <!--二楼大图-->
+    <div class="row two mt-2">
+      <div class="col-md-12">
+        <a href="products.html?kw=鞋">
+          <img src="img/index/i2.png" alt="二楼大图">
+        </a>
+      </div>
+    </div>
+    <!--三楼大图-->
+    <div class="row three mt-2">
+      <div class="col-md-12">
+        <a href="products.html?kw=鞋">
+          <img src="img/index/i3.jpg" alt="三楼大图">
+        </a>
+      </div>
+    </div>
+  </h3>
+
+  <!--电梯-->
+  <div class="btn-group-vertical position-fixed d-none" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-sm border-light border-left-0 border-right-0 my-1">新品<br>推荐</button>
+    <button type="button" class="btn btn-sm border-light border-left-0 border-right-0">潮流<br>上架</button>
+    <button type="button" class="btn btn-sm border-light border-left-0 border-right-0 my-1">热款<br>回归</button>
+  </div>
+  <!--四楼三张图-->
+  <div class="row four mt-2">
+    <div class="col-lg-4">
+      <a class="card" href="#">
+        <div class="front">
+          <img class="hidden-mobile" src="img/index/f1.jpg" alt="左图">
+          <img class="hidden-pc" src="img/index/ff1.jpg" alt="替换左图">
+        </div>
+        <div class="back">
+          <div>
+            <p><img src="img/index/card1.jpg" alt=""></p>
+            <button class="button">Click Here</button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-4">
+      <a class="card" href="#">
+        <div class="front">
+          <img class="hidden-mobile" src="img/index/f2.jpg" alt="中图">
+          <img class="hidden-pc" src="img/index/ff2.jpg" alt="替换中图">
+        </div>
+        <div class="back">
+          <div>
+            <p><img src="img/index/card2.jpg" alt=""></p>
+            <button class="button">Click Here</button>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col-lg-4">
+      <a class="card" href="#">
+        <div class="front">
+          <img class="hidden-mobile" src="img/index/f3.jpg" alt="右图">
+          <img class="hidden-pc" src="img/index/ff3.jpg" alt="替换右图">
+        </div>
+        <div class="back">
+          <div>
+            <p><img src="img/index/card3.jpg" alt=""></p>
+            <button class="button">Click Here</button>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</div>
+<footer id="footer" class="container"></footer>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

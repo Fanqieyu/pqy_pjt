@@ -1,0 +1,104 @@
+/*三个流程样式*/
+#cart .step{
+  height:25px;
+  margin-bottom:10px;
+}
+#cart .step li{
+  width:150px;
+  height:25px;
+  line-height:25px;
+  float:left;
+  margin-left:-15px;
+  text-align:center;
+  background:url("../img/shoppingcart/cart.gif") 0 0 no-repeat;
+}
+#cart .step .current{
+  color:#fff;
+  background-position:-150px 0px;
+}
+/*标题栏样式*/
+#cart .header{
+  height:30px;
+  line-height:30px;
+  background-color:#ededed;
+  white-space:nowrap;
+  padding-top:0;
+  padding-bottom:0;
+}
+/*所有的栅格行，不写这个会往左跑*/
+.row{
+  margin-left:0;
+}
+/*购物车内容样式*/
+#cart .content{
+  padding:16px 10px;
+  border-bottom:1px solid #ededed;
+}
+#cart img{
+  vertical-align:middle;
+}
+#cart .content .thumbnail{
+  width:60px;
+  height:60px;
+}
+
+
+/*所有的a去掉样式*/
+#cart a{
+  color:#333;
+  text-decoration:none;
+}
+/*登录优惠*/
+#cart .total{
+  display:inline-block;
+  color:#ff6600;
+}
+/*商品金额*/
+#cart strong{
+  display:inline-block;
+  min-width:100px;
+  color:#d43f3a;
+  font-size:18px;
+}
+/*按钮字体样式*/
+#cart>div:last-child>div>button{
+  font-size:15px;
+}
+
+@media screen and (min-width:992px){
+  /*所有div宽度*/
+  #cart>div{
+    min-width:1170px;
+    font-size:14px;
+  }
+}
+/*pad*/
+@media screen and (min-width:768px) and (max-width:991px){
+  /*某些div随宽度变化*/
+  #cart>div.step,#cart>div.header,#cart>div.content{
+    min-width:60%;
+  }
+  /*登录优惠消失*/
+  #cart div.total{
+    display:none;
+  }
+  /*购物车内容列变少*/
+  #cart div.none{
+    display:none;
+  }
+
+}
+/*phone*/
+@media screen and (max-width:767px){
+  /*流程，标题栏，登录优惠消失*/
+  #cart>div.step{
+    display:none;
+  }
+  #cart div.total{
+    display:none;
+  }
+  /*购物车内容列变少，购物标题栏消失*/
+  #cart div.none,#cart>.header{
+    display:none;
+  }
+}
